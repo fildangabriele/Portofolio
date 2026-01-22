@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cappello d'Oro</title>
+     <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../../pagina_principala.html">Bergamo</a> <img src="../../imagini/stema/Provincia_di_Bergamo-Stemma.svg.png" alt = "Stema Bergamo" width = "80"></h1>
+    </header>
+    <hr>
+    <header>
+        <h1>Cappello d'Oro</h1>
+        <div class="carousel-container" id="carousel">
+            <div class="carousel-slide active">
+                <img src="./Cappello1.jpg" alt="Cappello d'Oro">
+            </div>
+            <div class="carousel-slide">
+                <img src="./cp2.jpg" alt="cp2">
+            </div>
+            <div class="carousel-slide">
+                <img src="./cp3.jpg" alt="cp3">
+            </div>
+            <div class="carousel-slide">
+                <img src="./cp4.webp" alt="cp4">
+            </div>
+            <div class="carousel-slide">
+                <img src="./cp5.jpg" alt="cp5">
+            </div>
+            <button class="carousel-prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-next" onclick="nextSlide()">❯</button>
+        </div>
+        <div class="galerie">
+            <img src="./Cappello1.jpg" alt="Cappello d'Oro" width="300" height="200">
+            <img src="./cp2.jpg" alt="cp2" width="300" height="200">
+            <img src="./cp3.jpg" alt="cp3" width="300" height="200">
+            <img src="./cp4.webp" alt="cp4" width="300" height="200">
+            <img src="./cp5.jpg" alt="cp5" width="300" height="200">
+        </div>
+    </header>
+    
+    <main>
+        <ul id="nav-menu">
+    <li><a href="../../pagina_principala.html">Istorie</a></li>
+    
+    <li class="dropdown">
+        <a href="../../obiective_turistice.html" class="dropbtn">Obiective turistice ▼</a>
+        <div class="dropdown-content">
+            <a href="../../obiective_pagini/Piazza_vecchia/piazza_vecchia.html">Piazza Vecchia</a>
+            <a href="../../obiective_pagini/Basilica_SMM/Basilica_SMM.html">Basilica S. Maria</a>
+            <a href="../../obiective_pagini/Cappella_colleoni/Cappella_Co.html">Cappella Colleoni</a>
+            <a href="../../obiective_pagini/Rocca_di_Bergamo/Rocca_di_Bergamo.html">Rocca di Bergamo</a>
+            <a href="../../obiective_pagini/Accademia_carrara/Accademia_Carrara.html">Accademia Carrara</a>
+            <a href="../../obiective_pagini/Citta_alta/citta_alta.html">Città Alta</a>
+            <a href="../../obiective_pagini/Mura_Veneziale/mura_veneziale.html">Mura Venețiene</a>
+            <a href="../../obiective_pagini/Funicolare/Funicolare.html">Funicolare</a>
+            <a href="../../obiective_pagini/Parco_dei_colli/parco.html">Parco dei Colli</a>
+            <a href="../../obiective_pagini/Torre_del_Gombito/Torre_del_Gombito.html">Torre del Gombito</a>
+            </div>
+    </li>
+
+    <li class="dropdown">
+        <a href="../../cazare.html" class="dropbtn">Cazare ▼</a>
+        <div class="dropdown-content">
+            <a href="../../cazari_pagini/Arli/arli.html">Hotel Arli</a>
+            <a href="../../cazari_pagini/B&B/b&b.html">B&B Bergamo</a>
+            <a href="../../cazari_pagini/Cappello_d'oro/Cappello.html">Cappello d'Oro</a>
+            <a href="../../cazari_pagini/Gombit_hotel/Gombit.html">Gombit Hotel</a>
+            <a href="../../cazari_pagini/Hotel_excelsior/hotelExc.html">Hotel Excelsior</a>
+            <a href="../../cazari_pagini/Mercule/mercule.html">Mercule Hotel</a>
+            <a href="../../cazari_pagini/Nh/nh.html">NH Bergamo</a>
+            <a href="../../cazari_pagini/Petronilla/petronilla.html">Petronilla Residence</a>
+            <a href="../../cazari_pagini/Piazza_vecchia/Piazza.html">Piazza Vecchia</a>
+            <a href="../../cazari_pagini/Relais_san_Lorenzo/Relais.html">Relais Bergamo</a>
+            
+            </div>
+    </li>
+
+    <li><a href="../../evenimente.html">Evenimente</a></li>     <li><a href="../../contact.html">Contact</a></li></ul>
+        <h3>Descoperă Cappello d'Oro, o cazare elegantă în Bergamo</h3>
+        <p>Cappello d'Oro este un hotel de 4 stele situat în centrul orașului Bergamo, oferind camere confortabile și servicii de înaltă calitate. Hotelul dispune de facilități moderne, inclusiv un restaurant, un centru de fitness și săli de conferințe. Este o alegere ideală pentru turiștii care doresc să exploreze frumusețile istorice și culturale ale Bergamo, precum și pentru călătorii de afaceri.</p>
+   
+        <h2>Formular de Rezervare</h2>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Informații Personale</legend>
+                <p>
+                    <label for="nume">Nume:</label><br>
+                    <input type="text" id="nume" name="nume" required>
+                </p>
+                <p>
+                    <label for="prenume">Prenume:</label><br>
+                    <input type="text" id="prenume" name="prenume" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="telefon">Telefon:</label><br>
+                    <input type="tel" id="telefon" name="telefon" required>
+                </p>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Detalii Rezervare</legend>
+                <p>
+                    <label for="check-in">Data Check-in:</label><br>
+                    <input type="date" id="check-in" name="check-in" required>
+                </p>
+                <p>
+                    <label for="check-out">Data Check-out:</label><br>
+                    <input type="date" id="check-out" name="check-out" required>
+                </p>
+                <p>
+                    <label for="nr-persoane">Număr de persoane:</label><br>
+                    <input type="number" id="nr-persoane" name="nr-persoane" min="1" max="4" required>
+                </p>
+                <p>
+                    <label for="tip-camera">Tip Cameră:</label><br>
+                    <select id="tip-camera" name="tip-camera" required>
+                        <option value="">Selectați tipul camerei</option>
+                        <option value="single">Cameră Single</option>
+                        <option value="double">Cameră Double</option>
+                        <option value="twin">Cameră Twin</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Preferințe Suplimentare</legend>
+                <p>
+                    <input type="checkbox" id="pat-suplimentar" name="pat-suplimentar">
+                    <label for="pat-suplimentar">Pat suplimentar</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="mic-dejun" name="mic-dejun">
+                    <label for="mic-dejun">Mic dejun inclus</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="parcare" name="parcare">
+                    <label for="parcare">Loc de parcare</label>
+                </p>
+                <p>
+                    <label for="mentiuni">Mențiuni speciale:</label><br>
+                    <textarea id="mentiuni" name="mentiuni" rows="4" cols="50"></textarea>
+                </p>
+            </fieldset>
+
+            
+            <p>
+                <input type="checkbox" id="termeni" name="termeni" required>
+                <label for="termeni">Sunt de acord cu termenii și condițiile</label>
+            </p>
+
+            
+            <p>
+                <button type="submit">Trimite Rezervarea</button>
+                <button type="reset">Resetează Formularul</button>
+            </p>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025. Fildan Gabriele. Bergamo, Cappello d'Oro</p>
+    </footer>
+    <script src="../../script.js"></script>
+</body>
+</html>

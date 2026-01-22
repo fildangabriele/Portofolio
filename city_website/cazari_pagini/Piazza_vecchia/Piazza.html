@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piazza Vecchia</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../../pagina_principala.html">Bergamo</a> <img src="../../imagini/stema/Provincia_di_Bergamo-Stemma.svg.png" alt = "Stema Bergamo" width = "80"></h1>
+    </header>
+    <hr>
+    <button class="hamburger" id="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <header>
+        <h1>Piazza Vecchia</h1>
+        <div class="carousel-container" id="carousel">
+            <div class="carousel-slide active">
+                <img src="./piazzavechia.jpeg" alt="Piazza Vecchia">
+            </div>
+            <div class="carousel-slide">
+                <img src="./piazza2.jpg" alt="Piazza Vecchia">
+            </div>
+            <div class="carousel-slide">
+                <img src="./piazza3.jpg" alt="Piazza Vecchia">
+            </div>
+            <div class="carousel-slide">
+                <img src="./piazza4.jpg" alt="Piazza Vecchia">
+            </div>
+            <div class="carousel-slide">
+                <img src="./piazza5.jpg" alt="Piazza Vecchia">
+            </div>
+            <button class="carousel-prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-next" onclick="nextSlide()">❯</button>
+        </div>
+        <div class="galerie">
+            <img src="./piazzavechia.jpeg" alt="Piazza Vecchia" width="300" height="200">
+            <img src="./piazza2.jpg" alt="Piazza Vecchia" width="300" height="200">
+            <img src="./piazza3.jpg" alt="Piazza Vecchia" width="300" height="200">
+            <img src="./piazza4.jpg" alt="Piazza Vecchia" width="300" height="200">
+            <img src="./piazza5.jpg" alt="Piazza Vecchia" width="300" height="200">
+        </div>
+    </header>
+    
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="../../pagina_principala.html">Istorie</a></li>
+            
+            <li class="dropdown">
+                <a href="../../obiective_turistice.html">Obiective turistice</a>
+                <span class="dropbtn">▼</span>
+                <div class="dropdown-content">
+                    <a href="../../obiective_pagini/Piazza_vecchia/piazza_vecchia.html">Piazza Vecchia</a>
+                    <a href="../../obiective_pagini/Basilica_SMM/Basilica_SMM.html">Basilica S. Maria</a>
+                    <a href="../../obiective_pagini/Cappella_colleoni/Cappella_Co.html">Cappella Colleoni</a>
+                    <a href="../../obiective_pagini/Rocca_di_Bergamo/Rocca_di_Bergamo.html">Rocca di Bergamo</a>
+                    <a href="../../obiective_pagini/Accademia_carrara/Accademia_Carrara.html">Accademia Carrara</a>
+                    <a href="../../obiective_pagini/Citta_alta/citta_alta.html">Città Alta</a>
+                    <a href="../../obiective_pagini/Mura_Veneziale/mura_veneziale.html">Mura Venețiene</a>
+                    <a href="../../obiective_pagini/Funicolare/Funicolare.html">Funicolare</a>
+                    <a href="../../obiective_pagini/Parco_dei_colli/parco.html">Parco dei Colli</a>
+                    <a href="../../obiective_pagini/Torre_del_Gombito/Torre_del_Gombito.html">Torre del Gombito</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="../../cazare.html">Cazare</a>
+                <span class="dropbtn">▼</span>
+                <div class="dropdown-content">
+                    <a href="../../cazari_pagini/Arli/arli.html">Hotel Arli</a>
+                    <a href="../../cazari_pagini/B&B/b&b.html">B&B Bergamo</a>
+                    <a href="../../cazari_pagini/Cappello_d'oro/Cappello.html">Cappello d'Oro</a>
+                    <a href="../../cazari_pagini/Gombit_hotel/Gombit.html">Gombit Hotel</a>
+                    <a href="../../cazari_pagini/Hotel_excelsior/hotelExc.html">Hotel Excelsior</a>
+                    <a href="../../cazari_pagini/Mercule/mercule.html">Mercule Hotel</a>
+                    <a href="../../cazari_pagini/Nh/nh.html">NH Bergamo</a>
+                    <a href="../../cazari_pagini/Petronilla/petronilla.html">Petronilla Residence</a>
+                    <a href="../../cazari_pagini/Piazza_vecchia/Piazza.html">Piazza Vecchia</a>
+                    <a href="../../cazari_pagini/Relais_san_Lorenzo/Relais.html">Relais Bergamo</a>
+                </div>
+            </li>
+
+            <li><a href="../../evenimente.html">Evenimente</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Descoperă Piazza Vecchia, inima istorică a Bergamo</h3>
+        <p>Piazza Vecchia este una dintre cele mai faimoase piețe din Bergamo, situată în centrul orașului vechi (Città Alta). Această piață pitorească este înconjurată de clădiri istorice impresionante, inclusiv Palazzo della Ragione, Torre del Campanone și Biblioteca Civica Angelo Mai. Piazza Vecchia este un loc popular pentru localnici și turiști, oferind o atmosferă vibrantă cu cafenele, restaurante și evenimente culturale.</p>
+   
+        <h2>Formular de Rezervare</h2>
+        <form class="reservation-form" action="#" method="post">
+            
+            <fieldset>
+                <legend>Informații Personale</legend>
+                <div class="form-group">
+                    <label for="nume">Nume:</label>
+                    <input type="text" id="nume" name="nume">
+                    <span id="nume-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="prenume">Prenume:</label>
+                    <input type="text" id="prenume" name="prenume">
+                    <span id="prenume-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" name="telefon">
+                    <span id="telefon-error" class="error-message"></span>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Detalii Rezervare</legend>
+                <div class="form-group">
+                    <label for="check-in">Data Check-in:</label>
+                    <input type="date" id="check-in" name="check-in">
+                    <span id="check-in-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Data Check-out:</label>
+                    <input type="date" id="check-out" name="check-out">
+                    <span id="check-out-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="nr-persoane">Număr de persoane:</label>
+                    <input type="number" id="nr-persoane" name="nr-persoane" min="1" max="4">
+                    <span id="nr-persoane-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="tip-camera">Tip Cameră:</label>
+                    <select id="tip-camera" name="tip-camera">
+                        <option value="">Selectați tipul camerei</option>
+                        <option value="single">Cameră Single</option>
+                        <option value="double">Cameră Double</option>
+                        <option value="twin">Cameră Twin</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                    <span id="tip-camera-error" class="error-message"></span>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Preferințe Suplimentare</legend>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="pat-suplimentar" name="pat-suplimentar">
+                        Pat suplimentar
+                    </label>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="mic-dejun" name="mic-dejun">
+                        Mic dejun inclus
+                    </label>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="parcare" name="parcare">
+                        Loc de parcare
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="mentiuni">Mențiuni speciale:</label>
+                    <textarea id="mentiuni" name="mentiuni" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="termeni" name="termeni">
+                    Sunt de acord cu termenii și condițiile
+                </label>
+                <span id="termeni-error" class="error-message"></span>
+            </div>
+
+            
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Trimite Rezervarea</button>
+                <button type="reset" class="reset-btn">Resetează Formularul</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025. Fildan Gabriele. Bergamo, Piazza Vecchia</p>
+    </footer>
+    <script src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fildan Gabriele | Fine Light Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Site header with brand and primary navigation -->
+  <header class="nav-frame">
+    <div class="nav-row">
+      <a class="brand" href="#informatii" aria-label="Înapoi la pagina principală">
+        <div class="brand-mark" aria-hidden="true">FL</div>
+        <div class="brand-text">
+          <span class="brand-name">Fine Light</span>
+          <span class="brand-sub">PHOTOGRAPHY</span>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" aria-label="Navigare principală">
+				<a href="informatii.html">Informatii</a>
+				<a href="servicii.html">Servicii</a>
+				<a href="portofoliu.html">Portofoliu</a>
+				<a href="recenzii.html">Recenzii</a>
+				<a href="echipament.html">Echipament</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+    </div>
+  </header>
+
+  <!-- Landing sections -->
+  <main>
+    <!-- Hero slider showcasing highlight images -->
+    <section class="hero" id="informatii">
+      <!-- Slider wrapper; JS cycles .slide elements -->
+      <div class="slider" aria-label="Galerie foto">
+        <div class="slides" id="slides">
+          <article class="slide is-active" style="background-image:url('poze_site_fotograf/miri_pe_camp.webp');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/Miri_fug_pe_camp.webp');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/Botez_frunte.jpg');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/New_York.jpg');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/Femeie_alb_negru.webp');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/Bts_miri.jpg');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/mireasa_de_la_spate.jpg');"></article>
+          <article class="slide" style="background-image:url('poze_site_fotograf/Conferinta_cafea.webp');"></article>
+        </div>
+        <!-- Dot controls must match slide count for JS -->
+        <div class="dots" role="tablist" aria-label="Schimbă fotografia">
+          <button class="dot is-active" aria-label="Slide 1" data-index="0"></button>
+          <button class="dot" aria-label="Slide 2" data-index="1"></button>
+          <button class="dot" aria-label="Slide 3" data-index="2"></button>
+          <button class="dot" aria-label="Slide 4" data-index="3"></button>
+          <button class="dot" aria-label="Slide 5" data-index="4"></button>
+          <button class="dot" aria-label="Slide 6" data-index="5"></button>
+          <button class="dot" aria-label="Slide 7" data-index="6"></button>
+          <button class="dot" aria-label="Slide 8" data-index="7"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro block with photographer portrait -->
+    <section class="intro" id="servicii">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h1>FILDAN<br>GABRIELE</h1>
+          <p>fotograf<br>videograf</p>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="intro-photo">
+          <img src="poze_site_fotograf/FildanGabriele.JPG" alt="Portretul fotografului Fildan Gabriele">
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio teaser linking to full gallery; full grid is clickable via overlay -->
+    <section class="portfolio" id="portofoliu">
+      <a class="portfolio-mobile" href="portofoliu.html" aria-label="Vezi portofoliul">
+        <img src="poze_site_fotograf/Poza_cuplu.jpg" alt="Previzualizare portofoliu cu un cuplu în natură">
+        <span class="portfolio-mobile-text">portofoliu</span>
+      </a>
+
+      <div class="portfolio-grid">
+        <h2 class="portfolio-title">Portofoliu</h2>
+        <figure class="p-item p1">
+          <img src="poze_site_fotograf/Miri_triunghi.jpg" alt="Miri într-o lumină caldă de apus">
+        </figure>
+        <figure class="p-item p2">
+          <img src="poze_site_fotograf/Femeie_alb_negru.webp" alt="Portret artistic alb-negru">
+        </figure>
+        <figure class="p-item p3">
+          <img src="poze_site_fotograf/black_man_red_backround.jpg" alt="Portret business vibrant">
+        </figure>
+        <figure class="p-item p4">
+          <img src="poze_site_fotograf/mireasa_de_la_spate.jpg" alt="Mireasă surprinsă din spate">
+        </figure>
+        <div class="p-item p5 p-text" aria-hidden="true">
+          <span>Portofoliu</span>
+        </div>
+        <figure class="p-item p6">
+          <img src="poze_site_fotograf/Miri_inconjurati.jpg" alt="Cuplu dansând între invitați">
+        </figure>
+      </div>
+      <!-- Invisible overlay to make the whole grid a link -->
+      <a class="portfolio-link-cover" href="portofoliu.html" aria-label="Deschide pagina portofoliu"></a>
+    </section>
+
+    <!-- Call to action with email link; background set in CSS -->
+    <section class="cta" id="contact">
+      <div class="cta-overlay"></div>
+      <div class="cta-content">
+        <h3>Contact</h3>
+        <p>Spune-mi povestea ta și hai să o documentăm împreună.</p>
+        <a class="cta-button" href="contact.html">scrie</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global footer reused across pages -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-block footer-brand">
+        <div class="footer-logo">Fine Light<br>PHOTOGRAPHY</div>
+        <div class="footer-location"><span class="footer-icon">📍</span>Oradea, Romania</div>
+      </div>
+      <div class="footer-block footer-contact">
+        <div class="footer-contact-row">
+          <span class="footer-icon">📞</span>
+          <a href="tel:+40725037994">+40 725 037 994</a>
+        </div>
+        <div class="footer-contact-row">
+          <span class="footer-icon">✉️</span>
+          <a href="mailto:fildangabriele@gmail.com">fildangabriele@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-block footer-nav">
+        <a href="index.html">Acasa.</a>
+        <a href="portofoliu.html">Portofoliu.</a>
+        <a href="servicii.html">Servicii.</a>
+      </div>
+      <div class="footer-block footer-nav">
+        <a href="informatii.html">Despre.</a>
+        <a href="recenzii.html">Recenzii.</a>
+        <a href="contact.html">Contact.</a>
+      </div>
+      <div class="footer-block footer-social" aria-label="Social media">
+        <span class="footer-social-label">Urmărește-mă</span>
+        <div class="footer-social-icons">
+          <a class="social-link" href="https://www.instagram.com/fildan_gabriele/" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5.25-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.25 5.5z"/>
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a class="social-link" href="https://www.facebook.com/fildan.gabriele/" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13 10.5V8.75c0-.7.2-1.18 1.34-1.18H15V5.1C14.76 5.07 14.03 5 13.2 5 11 5 9.5 6.24 9.5 8.5v2H7v2.7h2.5V19h3V13.2h2.25l.25-2.7z"/>
+            </svg>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a class="social-link" href="https://ro.pinterest.com/fildangabrielle/" aria-label="Pinterest">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.13 4C7.83 4 5 6.93 5 10.36c0 2.54 1.12 4.3 3.5 5 .14.04.27.01.32-.15l.36-1.37c.03-.1.01-.16-.07-.25-.72-.78-.9-1.65-.45-2.94.47-1.37 1.86-2.25 3.34-2.25 1.82 0 2.83 1.11 2.83 2.6 0 2.05-.91 3.78-2.26 3.78-.75 0-1.31-.62-1.13-1.38.22-.91.64-1.9.64-2.55 0-.59-.32-1.08-.98-1.08-.78 0-1.4.8-1.4 1.88 0 .69.23 1.15.23 1.15l-.93 3.95c-.14.62-.02 1.39-.01 1.47 0 .06.08.08.12.03.05-.06.7-.87.92-1.67l.35-1.3c.35.67 1.38 1.12 2.32 1.12 2.18 0 3.66-1.9 3.66-4.45C16.85 6.51 14.83 4 12.13 4z"/>
+            </svg>
+            <span class="sr-only">Pinterest</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">© 2026 Fine Light Photography. Toate drepturile rezervate.</div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
